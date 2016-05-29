@@ -1,0 +1,433 @@
+/* Global stting */
+
+@font-face {
+    font-family: 'shake your plums'; /*a name to be used later*/
+    src: url('../fonts/Shake-Your-Plums.otf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Charbroil'; /*a name to be used later*/
+    src: url('../fonts/Charbroil.ttf'); /*URL to font*/
+}
+
+/* Global stting */
+
+/* nav */
+.fix
+{
+    width:52px;
+    height: 45px;
+    position: fixed;
+    top: 32px;
+    right: 20px;
+    z-index: 1000
+}
+#nav-icon1{
+    width:52px;
+    height: 45px;
+    position: relative;
+    cursor: pointer;
+    transition: all .55 ease-in-out
+}
+
+
+ #nav-icon1 span
+{
+    display: block;
+    width:100%;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    transform: rotate(0deg);
+    left:0;
+    transition: all .33s ease-in-out
+}
+
+
+#nav-icon1 span:nth-child(1)
+{
+  top:0;
+
+}
+
+#nav-icon1 span:nth-child(2)
+{
+  top:12.5px;
+}
+
+#nav-icon1 span:nth-child(3)
+{
+  top:27px;
+  width: 70%;
+}
+
+
+#nav-icon1.open span:nth-child(3)
+{
+  transform: rotate(137deg);
+  top: 20px;
+  height: 6px;
+  width: 100%
+}
+
+#nav-icon1.open span:nth-child(2)
+{
+  transform: rotate(137deg);
+  left: 100px;
+  opacity: 0;
+  height: 6px;
+
+}
+
+#nav-icon1.open span:nth-child(1)
+{
+  transform: rotate(-140deg);
+  top:20px;
+  height: 6px;
+
+}
+
+
+#nav-foooo
+{
+  width: 100%;
+height: 709px;
+top: 14px;
+right: 0px;
+position: fixed;
+margin-top: -14px;
+text-align: center;
+font-family: 'shake your plums';
+background-color: #2C0359;
+z-index: 999;
+display: none;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  padding-top: 50px
+}
+ul li{
+  list-style: none;
+  font-size: 60px;
+  padding-top: 33px;
+  position: relative;
+}
+
+ul li a{
+  color: #FF7A00;
+}
+
+ul li a:hover{
+  color: #FF7A00;
+  text-decoration: none;
+  border-bottom: 3px solid #FF7A00;
+}
+.angel{
+  width: 300px;
+    height: 408px;
+    position: absolute;
+    top: 27px;
+    left: 488px;
+    border: 27px solid #000000;
+    background-color: rgba(201, 107, 167, 0);
+}
+
+.angel-2{
+width: 281px;
+height: 473px;
+position: absolute;
+top: 65px;
+left: 546px;
+border: 18px solid #FF7A00;
+background-color: rgba(201, 107, 167, 0);
+}
+
+
+/* end nav */
+
+header{
+  background: url(../img/100-1.jpg);
+  width: 100%;
+  height: 705px;
+  background-position: 50% 41%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+.text{
+height: 400px;
+position: absolute;
+top: 184px;
+left: 60px;
+}
+
+.text img{
+  width:  853px;
+}
+
+header span{
+  color: #fff;
+position: absolute;
+top: 484px;
+right: -21px;
+font-size: 30px;
+transform: rotate(90deg);
+font-family: 'shake your plums';
+}
+/* arrow */
+.arrow{
+  position: absolute;;
+  top:670px;
+  left:48%
+}
+.arrow img{
+  width: 31px;
+height: 31px;
+}
+/* arrow */
+
+/* who am I*/
+
+.who{
+  background-color: #2C0359;
+  background-attachment: fixed;
+  width: 100%;
+  height: 726px;
+  font-family: 'shake your plums';
+  color: #fff;
+  padding-top: 30px;
+  position: relative;
+  overflow: hidden;
+
+}
+.who img{
+  width: 72px;
+  margin-left: 627px;
+}
+.who h3{
+  text-align: center;
+  font-size: 48px
+}
+.who .right-part h2{
+  font-size: 61px;
+  width: 50%;
+  padding-top: 72px;
+  padding-left: 72px;
+}
+.right-part span{
+  color: #FF7A00;
+}
+
+.left-part{
+  width: 350px;
+  height: 400px;
+  top: 200px;
+  right: 193px;
+  transform: translate(137% , -139%);
+  border: 7px solid #FF7A00;
+  position: absolute;
+
+  box-shadow: 11px 12px 8px #000;
+}
+.left-part .box{
+  width: 200px;
+  height: 210px;
+  border: 7px solid #FF7A00;
+  position: absolute;
+  top: -108px;
+  right: -112px;
+  box-shadow: 11px 12px 8px #000;
+}
+
+.trick-1{
+position: relative;
+}
+.trick-1 span:first-child{
+  width: 177px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #FF7A00;
+  position: absolute;
+  top: 20px;
+  left: 966px;
+  transform: translateX(692px) rotate(-51deg) translateY(-503px) ;
+  box-shadow: 11px 12px 8px #000;
+}
+
+.trick-1 span:nth-child(2){
+
+    width: 356px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #FF7A00;
+    position: absolute;
+    top: -180px;
+    left: 917px;
+    transform: rotate(-51deg);
+    box-shadow: 11px 12px 8px #000;
+
+}
+
+.trick-1 span:nth-child(3){
+
+  width: 95px;
+height: 2px;
+border-radius: 10px;
+background-color: #FF7A00;
+position: absolute;
+top: -63px;
+left: 878px;
+transform: translateX(855px) rotate(-51deg) translateY(-722px);
+
+box-shadow: 11px 12px 8px #000;
+
+}
+
+/* who am I */
+
+/* work */
+.work{
+  background-image: url(../img/pexels-photo-26938.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 750px;
+  padding-top: 30px;
+  border-top: 3px solid #FF7A00;
+  border-bottom: 3px solid #FF7A00;
+}
+.work h2{
+  text-align: center;
+  font-size: 48px;
+  color: #FFFFFF;
+  font-family: 'shake your plums';
+
+}
+.big-box{
+  width: 1098px;
+  height: 500px;
+  margin: 33px auto
+}
+.custom{
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin: 20px 58px;
+  border: 2px solid #2C0359;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.num{
+  color: #FFFFFF;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+}
+.num h1{
+    font-size: 188px;
+    font-family: 'Charbroil';
+    transition: all .33s ease-in-out
+}
+.custom:hover{
+  color: #FF7A00;
+}
+.box-one:hover{
+  background-image:url(../img/gif-watches.gif);
+  background-size: cover;
+}
+.box-tow:hover{
+  background-image: url(../img/presentation.jpg);
+  background-size: cover;
+}
+.box-three:hover{
+  background-image: url(../img/dribbble_2016_117.jpg);
+  background-size: cover;
+}
+
+
+
+
+/* work */
+.contact{
+  background-color: #2C0359;
+  width: 100%;
+  height: 400px;
+  padding-top: 30px;
+  font-family: 'shake your plums';
+  overflow: hidden;
+}
+.contact h1{
+  text-align: center;
+  color: #fff;
+  font-size: 48px;
+}
+hr{
+  width: 400px
+}
+.contact-box{
+  width:495px;
+  margin: 27px auto;
+  position: relative;
+}
+.contact-box h3{
+  transition: all .22s ease-in-out
+}
+.contact-box a:hover h3{
+  color:rgb(221, 255, 0)
+}
+.contact h3{
+  float: left;
+  margin: 10px 40px;
+  color: #FF7A00;
+  font-size: 35px
+}
+.last{
+  margin-top: 78px;
+  font-size: 20px
+}
+.last h1{
+  font-size: 35px
+}
+/* trick */
+.trick {
+  position: relative;
+}
+.trick span:first-child{
+  width: 400px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #FF7A00;
+  position: absolute;
+  top: -124px;
+  right: 30px;
+  transform:rotate(-51deg);
+  box-shadow: 11px 12px 8px #000;
+  transform: translateX(692px) rotate(-51deg) translateY(-503px)
+}
+.trick span:nth-child(2){
+  width: 200px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #FF7A00;
+  position: absolute;
+  top: -318px;
+  right: 30px;
+  transform:rotate(-51deg);
+}
+.trick span:nth-child(3){
+  width: 177px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #FF7A00;
+  position: absolute;
+  top: 20px;
+  left: 966px;
+  transform: translateX(460px) rotate(-51deg) translateY(-302px);
+  box-shadow: 11px 12px 8px #000;
+}
